@@ -1,12 +1,47 @@
 <template>
-  <div class="h2 mb-0">
-    asdfasdfasdfasdf
-    <b-icon icon="exclamation-circle-fill" variant="success"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="warning"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="danger"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="info"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="primary"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="secondary"></b-icon>
-    <b-icon icon="exclamation-circle-fill" variant="dark"></b-icon>
-  </div>
+  <!-- <div>
+    <b-button v-b-toggle.sidebar-1>Toggle Sidebar</b-button>
+    <b-sidebar id="sidebar-1" title="Sidebar" shadow>
+      <div class="px-3 py-2">
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+          in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+        </p>
+        <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+      </div>
+    </b-sidebar>
+  </div> -->
+  <sidebar-menu :menu="menu" />
 </template>
+ 
+<script>
+    export default {
+        data() {
+            return {
+                menu: [
+                    {
+                        header: true,
+                        title: 'Main Navigation',
+                        hiddenOnCollapse: true
+                    },
+                    {
+                        href: '/',
+                        title: 'Dashboard',
+                        icon: 'fa fa-user'
+                    },
+                    {
+                        href: '/charts',
+                        title: 'Charts',
+                        icon: 'fa fa-chart-area',
+                        child: [
+                            {
+                                href: '/charts/sublink',
+                                title: 'Sub Link'
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+</script> 
