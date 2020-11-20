@@ -21,8 +21,8 @@
                 menu: [
                     {
                         header: true,
-                        title: 'Main Navigation',
-                        hiddenOnCollapse: true
+                        title: 'Menu',
+                        hiddenOnCollapse: false
                     },
                     {
                         href: '/',
@@ -30,12 +30,17 @@
                         icon: 'fa fa-user'
                     },
                     {
-                        href: '/charts',
-                        title: 'Charts',
+                        href: '/about',
+                        title: 'About',
+                        icon: 'fa fa-user'
+                    },
+                    {
+                        href: '/introduce',
+                        title: 'Introduce',
                         icon: 'fa fa-chart-area',
                         child: [
                             {
-                                href: '/charts/sublink',
+                                href: '/introduce/sublink',
                                 title: 'Sub Link'
                             }
                         ]

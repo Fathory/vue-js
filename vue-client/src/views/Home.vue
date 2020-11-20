@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
   name: 'Home',
@@ -16,8 +16,8 @@ export default {
     HelloWorld
   },
   async created() {
-    const {data} = await axios.get('/api/hello');
-    console.log(data);
+    // const {data} = await axios.get('/api/hello');
+    // console.log(data);
     
   },
 }
