@@ -11,7 +11,8 @@
       </div>
     </b-sidebar>
   </div> -->
-  <sidebar-menu :menu="menu" />
+<!--  <sidebar-menu :menu="menu" />-->
+  <div></div>
 </template>
  
 <script>
